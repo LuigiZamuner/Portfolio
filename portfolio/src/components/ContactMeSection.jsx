@@ -25,7 +25,7 @@ const LandingSection = () => {
   initialValues: {
     firstName: "",
     email: "",
-    type: "hireMe",
+    type: "hireMe", 
     comment: "",
   },
   onSubmit: async (values) => {
@@ -63,7 +63,7 @@ const LandingSection = () => {
     >
       <VStack w="1024px" p={32} alignItems="flex-start">
         <Heading as="h1" id="contactme-section">
-          Contact me
+          Contato
         </Heading>
 
         <Box p={6} rounded="md" w="100%">
@@ -75,7 +75,7 @@ const LandingSection = () => {
                   Boolean(formik.errors.firstName)
                 }
               >
-                <FormLabel htmlFor="firstName">Name</FormLabel>
+                <FormLabel htmlFor="firstName">Nome</FormLabel>
                 <Input
                   id="firstName"
                   name="firstName"
@@ -92,7 +92,7 @@ const LandingSection = () => {
                   Boolean(formik.errors.email)
                 }
               >
-                <FormLabel htmlFor="email">Email Address</FormLabel>
+                <FormLabel htmlFor="email">Email</FormLabel>
                 <Input
                   id="email"
                   name="email"
@@ -105,20 +105,27 @@ const LandingSection = () => {
               </FormControl>
 
               <FormControl>
-                <FormLabel htmlFor="type">Type of enquiry</FormLabel>
+                <FormLabel htmlFor="type">Tipo</FormLabel>
                 <Select
                   id="type"
                   name="type"
+                  bg="#512DA8"
                   {...formik.getFieldProps("type")}
                 >
-                  <option value="hireMe">
-                    Freelance project proposal
+                  <option value="hireMe" style={{ background: "#ab92e6" }}>
+                    Contratação
                   </option>
-                  <option value="openSource">
-                    Open source consultancy session
+                  <option value="project" style={{ background: "#ab92e6" }}>
+                    Projeto
                   </option>
-                  <option value="other">
-                    Other
+                  <option value="partnership" style={{ background: "#ab92e6" }}>
+                    Parceria
+                  </option>
+                  <option value="question" style={{ background: "#ab92e6" }}>
+                    Dúvida
+                  </option>
+                  <option value="other" style={{ background: "#ab92e6" }}>
+                    Outro
                   </option>
                 </Select>
               </FormControl>
@@ -130,7 +137,7 @@ const LandingSection = () => {
                 }
               >
                 <FormLabel htmlFor="comment">
-                  Your message
+                  Mensagem
                 </FormLabel>
                 <Textarea
                   id="comment"

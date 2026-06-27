@@ -3,10 +3,8 @@ import FullScreenSection from "./FullScreenSection";
 import { Box, Heading } from "@chakra-ui/react";
 import Card from "./Card";
 
-import photo1 from "../images/photo1.jpg";
-import photo2 from "../images/photo2.jpg";
-import photo3 from "../images/photo3.jpg";
-import photo4 from "../images/photo4.jpg";
+import photo1 from "../assets/photo1.png";
+import photo2 from "../assets/photo1.png";
 
 const projects = [
   {
