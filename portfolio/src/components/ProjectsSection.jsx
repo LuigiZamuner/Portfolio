@@ -4,7 +4,7 @@ import { Box, Heading } from "@chakra-ui/react";
 import Card from "./Card";
 
 import photo1 from "../assets/photo1.png";
-import photo2 from "../assets/photo1.png";
+import photo2 from "../assets/photo2.png";
 
 const projects = [
   {
@@ -14,9 +14,9 @@ const projects = [
     imageSrc: photo1,
   },
   {
-    title: "React Infinite Scroll",
+    title: "Game Dev",
     description:
-      "A scrollable bottom sheet with virtualisation support, native animations at 60 FPS and fully implemented in JS land 🔥️",
+      "Site oficial de um jogo desenvolvido na Unity, com informações sobre gameplay, novidades, downloads, atualizações e conteúdos exclusivos para a comunidade.",
     imageSrc: photo2,
   },
 ];
