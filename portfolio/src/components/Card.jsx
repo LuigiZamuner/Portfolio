@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
-const Card = ({ title, description, imageSrc }) => {
+const Card = ({ title, description, imageSrc, link }) => {
   return (
     <VStack
       backgroundColor="white"
@@ -24,7 +24,7 @@ const Card = ({ title, description, imageSrc }) => {
         </Text>
 
         <HStack spacing={2} color="black">
-          <Link href={"https://sign-sync-kappa.vercel.app/"} isExternal _hover={{ textDecoration: "none" }}>
+          <Link href={link} isExternal _hover={{ textDecoration: "none" }}>
             <HStack spacing={2} color="black">
               <Text fontWeight="bold">See more</Text>
               <FontAwesomeIcon icon={faArrowRight} size="1x" />
